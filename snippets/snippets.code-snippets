@@ -1,0 +1,85 @@
+{
+    "create Provided":{
+       "scope":"dart",
+       "prefix":"swp",
+       "description":"Creates a new Provided with its initial state",
+       "body":[
+          "final ref${1} = Provided((_) => $2);"
+       ]
+    },
+    "create Computed":{
+       "scope":"dart",
+       "prefix":"swc",
+       "description":"Creates a new Computed with its state builder",
+       "body":[
+          "final ref${1} = Computed((watch){",
+          "  $2",
+          "});"
+       ]
+    },
+    "create WatcherStatelessWidget":{
+       "scope":"dart",
+       "prefix":"swless",
+       "description":"Insert a WatcherStatelessWidget",
+       "body":[
+          "class $1 extends WatcherStatelessWidget {",
+          "  const $1({",
+          "    super.key,",
+          "  });",
+          "",
+          "  @override",
+          "  Widget build(BuildContext context, BuildStore store) {",
+          "    return const Placeholder();",
+          "  }",
+          "}"
+       ]
+    },
+    "create WatcherStatefulWidget":{
+       "scope":"dart",
+       "prefix":"swful",
+       "description":"Insert a WatcherStatefulWidget",
+       "body":[
+          "class $1 extends WatcherStatefulWidget {",
+          "  const $1({",
+          "    super.key,",
+          "  });",
+          "",
+          "  @override",
+          "  State<$1> createState() => _$1State();",
+          "}",
+          "",
+          "class _$1State extends State<$1> {",
+          "  @override",
+          "  Widget build(BuildContext context) {",
+          "    return const Placeholder();",
+          "  }",
+          "}"
+       ]
+    },
+    "create StateLogic":{
+       "scope":"dart",
+       "prefix":"swlogic",
+       "description":"Creates a new Provided for a StateLogic",
+       "body":[
+          "final ref${1}Logic = Provided((_) => ${1/(.*)/${1:/capitalize}/}Logic());",
+          "",
+          "class ${1/(.*)/${1:/capitalize}/}Logic with StateLogic {",
+          "  $2",
+          "}",
+          ""
+       ]
+    },
+    "create WatcherEffect":{
+       "scope":"dart",
+       "prefix":"sweffect",
+       "description":"Creates a WatcherEffect widget",
+       "body":[
+          "WatcherEffect(",
+          "  ref: $2,",
+          "  onStateChanged: (context, oldValue, newValue) {",
+          "    $3",
+          "  },",
+          ")"
+       ]
+    }
+  }

@@ -1,0 +1,35 @@
+{
+  "name": "flutter-state-watcher-snippets",
+  "displayName": "Flutter state_watcher Snippets",
+  "description": "Flutter state_watcher Snippets is a set of snippets for making you more productive while using Flutter state_watcher",
+  "publisher": "romain-rastel",
+  "icon": "media/icon.png",
+  "homepage": "https://github.com/letsar/flutter-state_watcher-snippets",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "bugs": {
+    "url": "https://github.com/letsar/flutter-state_watcher-snippets/issues"
+},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/letsar/flutter-state_watcher-snippets"
+  },
+  "keywords": [
+    "flutter",
+    "dart",
+    "state_watcher"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
