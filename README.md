@@ -43,6 +43,10 @@ vscode: ^1.50.0
 
 ## Release Notes
 
+### 0.0.2
+
+Lower VSCode version constraints
+
 ### 0.0.1
 
 Initial release of Flutter Binder Snippets

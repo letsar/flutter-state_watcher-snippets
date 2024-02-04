@@ -5,9 +5,9 @@
   "publisher": "romain-rastel",
   "icon": "media/icon.png",
   "homepage": "https://github.com/letsar/flutter-state_watcher-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.86.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Snippets"
